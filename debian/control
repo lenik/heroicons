@@ -1,0 +1,22 @@
+Source: heroicons
+Section: graphics
+Priority: optional
+Maintainer: Lenik <heroicons@bodz.net>
+Build-Depends: debhelper-compat (= 13), bash-completion, bash-shlib, svg2assets
+Standards-Version: 4.6.0
+Homepage: https://heroicons.com/
+Vcs-Browser: https://github.com/lenik/heroicons
+Vcs-Git: https://github.com/lenik/heroicons.git
+
+Package: heroicons
+Architecture: all
+Depends: ${misc:Depends},
+        bash-shlib,
+        nodejs (>= 12.0)
+Description: Heroicons icon library
+ Heroicons is a set of free MIT-licensed high-quality SVG icons.
+ .
+ This package provides:
+  - SVG icon files organized by variant (normal, solid, mini, micro)
+  - React JSX components
+
